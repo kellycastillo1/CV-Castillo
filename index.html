@@ -11,6 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBurgundy: '#800020',
+              brandGrayHover: '#d3d3d3',
+              brandBg: '#f8fafc',
+            }
+          }
+        }
+      }
+    </script>
+
     <style>
         /* ==========================================================================
            VARIABLES & CSS RESET (FLAT DESIGN PALETTE)
@@ -537,6 +552,7 @@
                     <li><a href="#educacion" class="nav-link">Educación</a></li>
                     <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
                     <li><a href="#referencias" class="nav-link">Referencias</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -547,11 +563,7 @@
         <div class="hero-container">
             <div class="hero-profile">
                 <div class="profile-img-container">
-                    <!-- SVG Avatar Flat interactivo como foto de perfil -->
-                    <svg class="profile-avatar-fallback" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
+                    <img src="https://raw.githubusercontent.com/kellycastillo1/CV-Castillo/main/foto%20kelly%20infounsa.jpeg" alt="Kelly Eliana Castillo Mamani" class="profile-img-placeholder" onerror="this.onerror=null; this.src='https://placehold.co/220x220/800020/ffffff?text=Kelly+Castillo';">
                 </div>
             </div>
             
@@ -877,6 +889,124 @@
             </div>
         </section>
 
+        <!-- SECCIÓN DE CONTACTO -->
+        <section id="contacto" class="mt-16">
+            <h3 class="section-title"><i class="fa-solid fa-paper-plane"></i> Contacto</h3>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+              
+              <!-- ÁREA 1: INFORMACIÓN DE CONTACTO -->
+              <div class="flex flex-col justify-between p-6 sm:p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
+                <div>
+                  <!-- Título y Subtítulo -->
+                  <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+                    Contáctanos
+                  </h1>
+                  <p class="text-lg sm:text-xl text-gray-600 mb-8 font-medium leading-relaxed">
+                    Juntos por nuevos desafíos y más oportunidades
+                  </p>
+
+                  <!-- Descripción -->
+                  <p class="text-gray-500 mb-8 leading-relaxed">
+                    Estamos listos para atender tus consultas, responder a tus preguntas y colaborar en tu próximo proyecto. Completa el formulario o escríbenos directamente por nuestras redes sociales.
+                  </p>
+                </div>
+
+                <!-- Canales de contacto & Redes sociales -->
+                <div class="space-y-4 pt-6 border-t border-gray-100">
+                  <p class="text-sm font-semibold uppercase tracking-wider text-gray-400">
+                    Hablemos directamente
+                  </p>
+                  
+                  <!-- Botón / Enlace directo a WhatsApp -->
+                  <a href="https://wa.me/51924607812" target="_blank" rel="noopener noreferrer" 
+                     class="inline-flex items-center gap-3 px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-xl transition duration-300 shadow-md hover:shadow-lg w-full sm:w-auto justify-center">
+                    <!-- Icono SVG de WhatsApp -->
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                    </svg>
+                    <span>Escríbenos a WhatsApp (+51 924 607 812)</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- ÁREA 2: FORMULARIO DE CONTACTO -->
+              <div class="bg-[#800020] p-6 sm:p-10 rounded-2xl shadow-xl flex flex-col justify-center text-white">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-white tracking-wide">
+                  Envíanos un mensaje
+                </h2>
+
+                <!-- Contenedor de mensaje de confirmación -->
+                <div id="statusMessage" class="hidden mb-6 p-4 rounded-xl text-center text-sm font-semibold transition-all"></div>
+
+                <form id="contactForm" class="space-y-5" novalidate>
+                  
+                  <!-- Campo: Nombre -->
+                  <div>
+                    <label for="nombre" class="block text-sm font-medium mb-1 text-gray-200">Nombre completo</label>
+                    <input 
+                      type="text" 
+                      id="nombre" 
+                      name="nombre" 
+                      required
+                      placeholder="Ej. Maria Delgado"
+                      class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:bg-white/20 transition"
+                    >
+                  </div>
+
+                  <!-- Campo: Teléfono -->
+                  <div>
+                    <label for="telefono" class="block text-sm font-medium mb-1 text-gray-200">Teléfono</label>
+                    <input 
+                      type="tel" 
+                      id="telefono" 
+                      name="telefono" 
+                      required
+                      placeholder="Ej. +51 900 000 000"
+                      class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:bg-white/20 transition"
+                    >
+                  </div>
+
+                  <!-- Campo: Correo Electrónico -->
+                  <div>
+                    <label for="correoelectronico" class="block text-sm font-medium mb-1 text-gray-200">Correo Electrónico</label>
+                    <input 
+                      type="email" 
+                      id="correoelectronico" 
+                      name="correoelectronico" 
+                      required
+                      placeholder="ejemplo@correo.com"
+                      class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:bg-white/20 transition"
+                    >
+                  </div>
+
+                  <!-- Campo: Mensaje -->
+                  <div>
+                    <label for="mensaje" class="block text-sm font-medium mb-1 text-gray-200">Mensaje</label>
+                    <textarea 
+                      id="mensaje" 
+                      name="mensaje" 
+                      rows="4" 
+                      required
+                      placeholder="¿En qué podemos ayudarte?"
+                      class="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white focus:bg-white/20 transition resize-none"
+                    ></textarea>
+                  </div>
+
+                  <!-- Botón de Envío -->
+                  <button 
+                    type="submit" 
+                    id="btnSubmit"
+                    class="w-full py-3.5 px-6 mt-2 bg-white text-[#800020] font-bold rounded-xl hover:bg-[#d3d3d3] hover:text-[#800020] active:scale-[0.99] transition duration-200 shadow-md cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+                  >
+                    Enviar Mensaje
+                  </button>
+                </form>
+              </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -923,7 +1053,6 @@
                 let current = '';
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
                     if (pageYOffset >= (sectionTop - 100)) {
                         current = section.getAttribute('id');
                     }
@@ -936,6 +1065,55 @@
                     }
                 });
             });
+
+            // Manejador del Formulario de Contacto
+            const form = document.getElementById('contactForm');
+            const btnSubmit = document.getElementById('btnSubmit');
+            const statusMessage = document.getElementById('statusMessage');
+            const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxojezCqG69Of7yGwQwXudg08QFk-Y5_NXKa3wJkIlqEeND-1VYFEiNwZ8qE1b3aepl/exec";
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                  e.preventDefault();
+
+                  if (!form.checkValidity()) {
+                    showStatus('Por favor, completa todos los campos requeridos.', 'bg-yellow-500/20 text-yellow-200 border border-yellow-500/30');
+                    return;
+                  }
+
+                  btnSubmit.disabled = true;
+                  btnSubmit.innerText = "Enviando...";
+                  hideStatus();
+
+                  const formData = new FormData(form);
+
+                  fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    body: formData
+                  })
+                  .then(response => {
+                    showStatus('¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.', 'bg-emerald-500/20 text-emerald-200 border border-emerald-500/30');
+                    form.reset();
+                  })
+                  .catch(error => {
+                    showStatus('Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.', 'bg-red-500/20 text-red-200 border border-red-500/30');
+                  })
+                  .finally(() => {
+                    btnSubmit.disabled = false;
+                    btnSubmit.innerText = "Enviar Mensaje";
+                  });
+                });
+            }
+
+            function showStatus(text, classes) {
+              statusMessage.className = `p-4 rounded-xl text-center text-sm font-semibold transition-all ${classes}`;
+              statusMessage.innerText = text;
+              statusMessage.classList.remove('hidden');
+            }
+
+            function hideStatus() {
+              statusMessage.classList.add('hidden');
+            }
         });
     </script>
 </body>
